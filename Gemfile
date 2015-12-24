@@ -43,5 +43,17 @@ group :development do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
-end
 
+  gem 'therubyracer', platforms: :ruby
+  gem 'bcrypt', '~> 3.1.7'
+  gem 'nokogiri', '~> 1.6.1'
+  gem 'rails-i18n', '~> 4.0.1'
+
+  group :test do
+    gem 'rspec-rails', '~> 3.0.2'
+    gem 'spring-commands-rspec', '~> 1.0.1'
+    gem 'capybara', '~> 2.2.1'
+    gem 'factory_girl_rails', '~> 4.4.1'
+    gem 'database_cleaner', '~> 1.2.0'
+  end
+end
